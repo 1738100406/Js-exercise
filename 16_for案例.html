@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>16_for循环案例</title>
+    <script>
+    // 1.求1-100之间所有数的平均值
+        var sum = 0,average;
+        for(i=1;i<=100;i++){
+            sum+=i;
+        }
+        average= sum / 100;
+        console.log(average);
+
+    // 2.求1-108之间所有偶数和奇数的和
+    var ou = 0;//定义偶数
+    var ji = 0;//定义奇数
+    for(i=0;i<=100;i++){
+        if(i % 2 == 0){
+            ou=i+ou;
+        }else{
+            ji=i+ji;
+        }
+    }
+    console.log('1-108之间所有偶数'+ou);
+    console.log('1-108之间奇数的和'+ji);
+    
+    // 3.求1-100之间所有能被3整除的数字的和
+    var number=0;
+    for(i=1;i<=100;i++){
+        if(i%3==0){
+          number=i+number  
+        }
+    }
+    console.log('1-100之间所有能被3整除的数字的和是'+number);
+    
+//弹出输入框输入总的班级人数(num)
+//依次输入学生的成绩(保存起来score)此时我们需要用到
+// for循环， 弹出的次数跟班级总人数有关系条件表达式i <= num
+//进行业务处理:计算成绩。 先求总成绩( sum)，之后求平均成绩( average)
+//弹出结果
+//     var num = prompt('请输入班级总人数');
+//     var score = 0,sum = 0,aver=0;
+//     for(i=1;i<=num;i++){
+//         score = prompt('请输入第个'+i+'学生的成绩');
+//         sum=sum+ parseFloat(score);
+// //prompt是字符型的需要用    parseFloat()转化
+//     }
+//     aver=sum/num;
+//     console.log('平均成绩是'+aver);
+
+//打印星星
+    var gs = prompt('请输入你要答应星星的个数');
+    var str = '';
+    for(i=1;i<=gs;i++){
+        str=str+'星星';
+    } console.log(str);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
