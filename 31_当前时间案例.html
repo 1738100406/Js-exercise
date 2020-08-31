@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>31_当前时间案例</title>
+    <script>
+        var date =new Date();
+        var years = date.getFullYear();
+        var mouths = date.getMonth()+1;
+        var arr =['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
+        var dates=date.getDate();
+        var day=date.getDay();
+    console.log('今天是'+years+'年'+ mouths+'月'+dates+'日 '+arr[day]);
+ 
+    
+    
+    var nowday = new Date();
+    nowday.setTime(nowday.getTime());
+    var nowdayy = nowday.getFullYear() + "-" + (nowday.getMonth() + 1) + "-" + nowday.getDate();
+    console.log(nowdayy);
+    
+    </script>
+</head>
+
+<body>
+    <input type="button" value="显示当前时间" style="color: hotpink">
+    <div>显示时间</div>
+</body>
+</html>
